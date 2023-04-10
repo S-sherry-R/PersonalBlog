@@ -4,6 +4,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import type { ThemeOptions } from "vuepress-theme-hope";
 import type { Theme } from "@vuepress/core";
 
+// @ts-ignore
 const __dirname = getDirname(import.meta.url);
 
 export const localTheme = (options: ThemeOptions): Theme => {
@@ -19,10 +20,7 @@ export const localTheme = (options: ThemeOptions): Theme => {
         __dirname,
         "./components/PageFooter.vue"
       ),
-      "@theme-hope/modules/blog/components/BlogHero":path.resolve(
-        __dirname,
-        "./components/BlogHero.vue"
-      ),
+
     },
   };
 };

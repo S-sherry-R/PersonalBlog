@@ -135,7 +135,7 @@ export default localTheme({
     },
     prismjs: false,
     copyright: {
-      author: "Oragekk",
+      author: "sherrySR",
       license: "CC BY-NC-SA 4.0",
       global: true,
     },

@@ -1,16 +1,5 @@
 <template>
   <footer class="footer-wrapper" v-show="enable">
-    <div class="busuanzi">
-      <span id="busuanzi_container_site_pv" style="display: none">
-        本站总访问量
-        <span id="busuanzi_value_site_pv"></span>次
-        <span class="post-meta-divider">|</span>
-      </span>
-      <span id="busuanzi_container_site_uv" style="display: none">
-        您是本站第
-        <span id="busuanzi_value_site_uv"></span>位访问者
-      </span>
-    </div>
     <div class="footer-content">
       <div class="footer" v-html="content"></div>
       <div class="copyright">{{ copyright }}</div>
@@ -21,23 +10,13 @@
 <script setup>
 import { usePageFrontmatter } from "@vuepress/client";
 import { isString } from "@vuepress/shared";
-import { computed, watch } from "vue";
+import { computed } from "vue";
 import {
   usePageAuthor,
   useThemeLocaleData,
 } from "@theme-hope/composables/index";
-import { useRouter } from "vue-router";
-import script from "../utils/busuanzi.pure";
 
-// 或取 当前vue-router 实例
-const router = useRouter();
-// 可以直接侦听一个 ref
-watch(router.currentRoute, async (to, from) => {
-  if (to.path != from.path) {
-    script.fetch();
-    // console.log("to.path：" + to.path + "\n" + "from.path：" + from.path)
-  }
-});
+
 const frontmatter = usePageFrontmatter();
 const themeLocale = useThemeLocaleData();
 const author = usePageAuthor();
@@ -62,7 +41,7 @@ const copyright = computed(() =>
     : "copyright" in themeLocale.value
     ? themeLocale.value.copyright
     : author.value.length
-    ? `Copyright © 2016-${new Date().getFullYear()} ${author.value[0].name}`
+    ? `Copyright © ${new Date().getFullYear()} ${author.value[0].name}`
     : false
 );
 </script>
