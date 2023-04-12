@@ -16,17 +16,17 @@ head:
 projects:
   - icon: /assets/link.svg
     name: 友人帐
-    desc: (✪ω✪)
+    desc: (◕ᴗ◕✿)
     link: /friend
 
-  - icon: /assets/lyb.svg
+  - icon: /assets/board.svg
     name: 留言板
     desc: 欢迎留言☺
     link: /visitorsbook
 
-  - icon: /assets/shoucang.svg
+  - icon: /assets/collect.svg
     name: 收藏
-    desc: 大佬们的想法
+    desc: 涨知识(✪ω✪)
     link: /mark
 
 footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>

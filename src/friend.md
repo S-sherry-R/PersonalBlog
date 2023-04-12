@@ -6,16 +6,14 @@ article: false
 
 # 友情链接
 
-::: tip 🧩
-
-欢迎交换友情链接
+::: tip 欢迎交换友情链接
 
 本站信息如下
 ```json
-name: "上冬十二",
-desc: "到最后，竟庆幸于夕阳仍留在身上",
-ico: "https://oragekk.me/logo.svg",
-link: "https://oragekk.me/"
+name: "孤独的暖阳",
+desc: "死人唯一做的事就是把活着这事给搞砸了",
+ico: "https://sherrySR.top/logo.svg",
+link: "https://sherrySR.top/"
 ```
 :::
 1. 把本站添加到你的站点中
