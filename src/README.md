@@ -22,7 +22,7 @@ projects:
   - icon: /assets/board.svg
     name: 留言板
     desc: 欢迎留言☺
-    link: /visitorsbook
+    link: /messageBoard
 
   - icon: /assets/collect.svg
     name: 收藏
