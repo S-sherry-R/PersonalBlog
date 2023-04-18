@@ -4,7 +4,7 @@ import { zhSidebar } from "./sidebar/index.js";
 
 export default localTheme({
   hotReload: false,
-  hostname: "https://oragekk.me",
+  hostname: "https://sherrysr.top/",
   themeColor: {
     blue: "#2196f3",
     red: "#f26d6d",
@@ -14,7 +14,7 @@ export default localTheme({
   fullscreen: true,
   author: {
     name: "孤独的暖阳",
-    url: "https://orgaekk.me",
+    url: "https://sherrysr.top/",
   },
 
   iconAssets: [
@@ -35,7 +35,6 @@ export default localTheme({
       Gitee: "https://gitee.com/sherrySR",
       GitHub: "https://github.com/S-sherry-R",
       BiliBili: "https://space.bilibili.com/3493088093801092?spm_id_from=333.999.0.0",
-      Steam:""
     },
     name: "孤独的暖阳",
   },
@@ -82,10 +81,10 @@ export default localTheme({
     },
     comment: {
       provider: "Waline",
-      serverURL: "https://talk.oragekk.me/", // your server url
+      serverURL: "https://waline.sherrysr.top/", // your server url
       reaction: true,
-      requiredMeta:['nick'],
-      wordLimit:300,
+      requiredMeta:['nick'],//设置必填项，默认匿名
+      wordLimit:400,//字数限制
       emoji:[
         "https://unpkg.com/@waline/emojis@1.1.0/tieba",
         "https://unpkg.com/@waline/emojis@1.1.0/weibo",
@@ -98,7 +97,7 @@ export default localTheme({
       ],
       locales:{
         "/":{
-          placeholder:"欢迎留言~ _(≧∇≦」∠)_ (填写常用邮箱即可快速收到回复通知~)"
+          placeholder:"欢迎留言（￣▽￣）～■□～（￣▽￣）　(填写常用邮箱即可快速收到回复通知~)"
         }
       }
     },
@@ -108,7 +107,6 @@ export default localTheme({
       license: "CC BY-NC-SA 4.0",
       global: true,
     },
-    // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
       attrs: true,

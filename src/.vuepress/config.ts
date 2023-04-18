@@ -20,6 +20,7 @@ const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
+  //在最终渲染出的 HTML 的<head>标签内加入的额外标签。
   head: [
     ["meta", { name: "referrer", content: "no-referrer-when-downgrade" }],
     ["script", { src: "/script/time.js" }],
@@ -27,13 +28,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Oragekk's Blog",
-      description: "上冬十二的博客",
+      title: "sherrySR's Blog",
+      description: "孤独的暖阳的博客",
     },
   },
   alias: {
-    "@MyLink": path.resolve(__dirname, "./components/Mylink.vue"),
-    "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),
+    "@MyLink": path.resolve(__dirname, "./components/Mylink.vue"),//友链组件
+    "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),//免费公开的API网站链接组件
   },
 
   theme,
@@ -61,7 +62,7 @@ export default defineUserConfig({
     }),
     // 背景插件
     canvasPlugin({
-      type: CanvasPluginType.Figure,
+      type: CanvasPluginType.Ribbon,
       ribbonOption: {
         zIndex: 1,
         alpha: 0.8,
@@ -153,6 +154,6 @@ export default defineUserConfig({
       },
     }),
   ],
-  // Enable it with pwa
+  // 如果使用了pwa，则设置为false
   shouldPrefetch: false,
 });

@@ -1,4 +1,4 @@
-const startTime = "10/31/2016 10:00:00";
+const startTime = "4/1/2023 23:00:00";
 
 function show_runtime() {
     window.setTimeout("show_runtime()", 1000);

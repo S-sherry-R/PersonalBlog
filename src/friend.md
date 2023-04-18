@@ -12,8 +12,8 @@ article: false
 ```json
 name: "孤独的暖阳",
 desc: "死人唯一做的事就是把活着这事给搞砸了",
-ico: "https://sherrySR.top/logo.svg",
-link: "https://sherrySR.top/"
+ico: "https://sherrysr.top/logo.svg",
+link: "https://sherrysr.top/"
 ```
 :::
 1. 把本站添加到你的站点中
