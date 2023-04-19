@@ -1,0 +1,95 @@
+.square-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: bgColor 15s ease infinite;
+  background-size: 400% 400%;
+  background-image: linear-gradient(45deg,#2376b7,#2f90b9,#0eb0c9,#2bae85,#a4cab6);
+  ul {
+    z-index: 99;
+    right: 50px;
+    top:100px;
+    width: 100px;
+    height: 100px;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    transform-style: preserve-3d; /*将子元素转为3D*/
+    transition: all 10s linear;
+    animation: squareRotate 10s linear infinite;
+    transform: rotateX(45deg) rotateY(45deg); /*让ul整体向下转45度,向右转45度*/
+    li {
+      width: 100px;
+      height: 100px;
+      /* border-radius: 50%; */
+      text-align: center;
+      line-height: 100px;
+      position: absolute; /*让所有的子元素都重叠在一起*/
+      border:1px solid #9b9797;
+      left: 0;
+      right: 0;
+    }
+    li:nth-child(1) {
+      transform: translateZ(50px); /*正面*/
+      //background: url('./image/lol1.jpg') 0 0 no-repeat;
+      background-image: radial-gradient(rgba(246, 238, 232, 0.2), rgba(246, 180, 134, 0.2), rgba(239, 145, 78, 0.2));
+      background-size: cover;
+    }
+    li:nth-child(2) {
+      transform: rotateX(180deg) translateZ(50px);/*背面*/
+      background-image: radial-gradient(rgba(238, 232, 246, 0.2), rgba(171, 134, 246, 0.2), rgba(167, 78, 239, 0.2));;
+      //background: url('./image/lol2.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+    li:nth-child(3) {
+      transform: rotateY(-90deg) translateZ(50px);/*右面*/
+      background-image: radial-gradient(rgba(232, 246, 240, 0.2), rgba(134, 246, 186, 0.2), rgba(78, 239, 201, 0.2));;
+      //background: url('./image/lol3.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+    li:nth-child(4) {
+      transform: rotateY(90deg) translateZ(50px);/*左面*/
+      background-image: radial-gradient(rgba(246, 246, 232, 0.2), rgba(225, 246, 134, 0.2), rgba(218, 239, 78, 0.2));;
+      //background: url('./image/lol4.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+    li:nth-child(5) {
+      transform: rotateX(90deg) translateZ(50px);/*下面*/
+      background-image: radial-gradient(rgba(246, 238, 232, 0.2), rgba(246, 180, 134, 0.2), rgba(239, 145, 78, 0.2));;
+      //background: url('./image/lol5.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+    li:nth-child(6) {
+      transform: rotateX(-90deg) translateZ(50px); /*上面*/
+      background-image: radial-gradient(rgba(246, 238, 232, 0.2), rgba(246, 180, 134, 0.2), rgba(239, 145, 78, 0.2));;
+      //background: url('./image/lol6.jpg') 0 0 no-repeat;
+      background-size: cover;
+    }
+    ul:hover {/*鼠标移动到盒子上就可以让正方体旋转起来了*/
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      background-size: 100px;
+    }
+  }
+}
+@keyframes squareRotate{
+  0% {
+    transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes bgColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

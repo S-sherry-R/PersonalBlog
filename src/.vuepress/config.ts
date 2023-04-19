@@ -10,6 +10,7 @@ import { live2DAssistPlugin } from "./plugins/vuepress-plugin-live2DAssist";
 import { gradientCoverPlugin } from "./plugins/vuepress-plugin-gradient-cover";
 import theme from "./theme.js";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
+import { backPlugin } from "./plugins/vuepress-plugin-background";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { hitokotoPlugin } from "./plugins/vuepress-plugin-hitokoto";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
@@ -61,16 +62,17 @@ export default defineUserConfig({
       subPageHidden: true,
     }),
     // 背景插件
-    canvasPlugin({
-      type: CanvasPluginType.Ribbon,
-      ribbonOption: {
-        zIndex: 1,
-        alpha: 0.8,
-        size: 90,
-      },
-    }),
+    // canvasPlugin({
+    //   type: CanvasPluginType.Ribbon,
+    //   ribbonOption: {
+    //     zIndex: 1,
+    //     alpha: 0.8,
+    //     size: 90,
+    //   },
+    // }),
     // 遮罩插件
-    gradientCoverPlugin({}),
+    // gradientCoverPlugin({}),
+    backPlugin({}),
     // 谷歌统计
     googleAnalyticsPlugin({
       // 配置项
