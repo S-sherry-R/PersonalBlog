@@ -6,16 +6,15 @@ function square() {
         const li=document.createElement("li")
         const span1=document.createElement("span")
         const span2=document.createElement("span")
-        const span3=document.createElement("span")
-        const span4=document.createElement("span")
-        span1.className = "span1"
-        span2.className = "span2"
-        span3.className = "span3"
-        span4.className = "span4"
+        if(i<=2){
+            span1.className="upLine"
+            span2.className="downLine"
+        }else{
+            span1.className="leftLine"
+            span2.className="rightLine"
+        }
         li.appendChild(span1)
         li.appendChild(span2)
-        li.appendChild(span3)
-        li.appendChild(span4)
         ul.appendChild(li)
     }
     div.className = "square-bg";
