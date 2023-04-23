@@ -4,5 +4,6 @@ import { notes } from "./notes";
 export default sidebar(
     {
         "/notes/": notes,
+        "/articles/": "structure"
     },
 );

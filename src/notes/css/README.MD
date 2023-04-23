@@ -7,7 +7,7 @@ tag:
   - CSS
 ---
 ## 超出的文字用省略号
-```frontend
+```css
 /*单行超出*/
 .item-name {
       overflow: hidden;/*超出部分隐藏*/
@@ -27,7 +27,7 @@ tag:
 ## z-index不生效
 未使用定位不会生效
 ## 样式覆盖
-```frontend
+```css
 /deep/.ant-border{
   
 }
@@ -35,7 +35,7 @@ tag:
 ## 表格宽度不生效
 当表格的内容都是英文的时候，没有其他特殊字符，浏览器将增加表格和列的宽度，从而在一行中显示出所有的内容。浏览器不会根据设置的表格宽度和列宽度自动对这些内容换行
 解决：在表格定义中加
-```plugins
+```html
 <table style="word-break:break-all">
 ```
  

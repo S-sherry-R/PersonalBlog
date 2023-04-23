@@ -23,13 +23,12 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "sherrySR's Blog",
+      title: "孤独的暖阳",
       description: "孤独的暖阳的博客",
     },
   },
   alias: {
-    "@MyLink": path.resolve(__dirname, "./components/Mylink.vue"),//友链组件
-    "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),//免费公开的API网站链接组件
+    "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),//友链组件
   },
 
   theme,

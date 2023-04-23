@@ -1,6 +1,6 @@
 import { localTheme } from "./theme/index";
 import { zhNavbar } from "./navbar/index.js";
-import sidebar from "./sidebar/index";
+import sidebar  from "./sidebar/index";
 
 export default localTheme({
   hotReload: false,
@@ -18,10 +18,10 @@ export default localTheme({
   },
 
   iconAssets: [
-    // 默认：
-    "//at.alicdn.com/t/c/font_2410206_5vb9zlyghj.css",
-    // 自己的
-    "//at.alicdn.com/t/c/font_3941380_fpvodt87x3.css",
+    // 彩色图标
+    "//at.alicdn.com/t/c/font_4010461_3e4sow11e3d.css",
+    // 无色图标
+    "//at.alicdn.com/t/c/font_3589698_9wf775d3js.css",
   ],
 
   logo: "/logo.svg",
@@ -167,13 +167,13 @@ export default localTheme({
       manifest: {
         icons: [
           {
-            src: "/assets/icon/chrome-mask-512.png",
+            src: "/assets/icon/chrome-512.png",
             sizes: "512x512",
             purpose: "maskable",
             type: "image/png",
           },
           {
-            src: "/assets/icon/chrome-mask-192.png",
+            src: "/assets/icon/chrome-192.png",
             sizes: "192x192",
             purpose: "maskable",
             type: "image/png",
@@ -187,21 +187,6 @@ export default localTheme({
             src: "/assets/icon/chrome-192.png",
             sizes: "192x192",
             type: "image/png",
-          },
-        ],
-        shortcuts: [
-          {
-            name: "Demo",
-            short_name: "Demo",
-            url: "/demo/",
-            icons: [
-              {
-                src: "/assets/icon/guide-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-            ],
           },
         ],
       },

@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: home-fill
 title: 主页
 heroImage: /logo.svg
 bgImage: /assets/bg.png
@@ -9,6 +9,7 @@ heroText: 孤独的暖阳
 heroFullScreen: true
 tagline: 死人唯一做的事就是把活着这事给搞砸了 —— 《重返黑夜》
 description: 「尝试任何自己想做的事情」
+containerClass: home-style
 head:
   - - meta
     - name: keywords

@@ -7,7 +7,7 @@ tag:
   - HTML
 ---
 ## 同时传递event和其他参数
-```plugins
+```html
 <button @click='handleClick(123,$event)'>按钮</button>
 ```
 

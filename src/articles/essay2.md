@@ -11,7 +11,7 @@ tag:
 
 每 20 毫秒，代码就会绘制视频的当前帧：
 
-```plugins
+```html
 <!DOCTYPE plugins>
 <plugins>
 <head>
@@ -55,7 +55,7 @@ v.addEventListener('ended',function()
 
 ### 获取视频第一帧
 
-```tools
+```vue
 <template>
 <div>
   <!-- 注意：必须要使用preload,不然绘制出的图片为空白，预加载-->

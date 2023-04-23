@@ -8,7 +8,7 @@ tag:
 ---
 ## 插入数据返回主键
 
-````mybatis
+````sql
 <insert id="add" parameterType="EStudent" useGeneratedKeys="true" keyProperty="id">
   insert into TStudent(name, age) values(#{name}, #{age})
 </insert>
@@ -24,7 +24,7 @@ tag:
 
 ## 查询表的结构（列名等）
 
-````mysql
+````sql
 SELECT column_name 
 FROM information_schema.columns 
 WHERE table_schema='yellowcong' AND table_name='sys_user';
@@ -38,7 +38,7 @@ WHERE table_schema='yellowcong' AND table_name='sys_user';
 
 * 查看锁表的命令
 
-```mysql
+```sql
 show open tables where in_use>0;
 ```
 
@@ -52,19 +52,19 @@ show open tables where in_use>0;
 
 * 查看事务挂起：
 
-```mysql
+```sql
 select * from information_schema.innodb_trx
 ```
 
 * 查看最大连接数
 
-```mysql
+```sql
 show variables like '%max_connection%';
 ```
 
 * 重新设置最大连接数
 
-````mysql
+````sql
 set global max_connections=1000;
 ````
 
@@ -90,7 +90,7 @@ set global max_connections=1000;
 
 * 修改密码
 
-```mysql
+```sql
 alter user 'root'@'localhost' identified by 'root';(by 接着的是密码)
 ```
 

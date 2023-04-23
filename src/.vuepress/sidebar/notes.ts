@@ -3,37 +3,44 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const notes = arraySidebar([
     {
         text: "VUE",
-        icon:"/sidebarIcons/vue.png",
-        link:"/vue/"
+        icon:"c-vue",
+        prefix: "notes/",
+        link:"vue/"
     },
     {
         text: "JAVA",
-        icon:"/sidebarIcons/java.png",
-        link:"/vue/"
+        icon:"c-java",
+        prefix: "notes/",
+        link:"java/"
     },
     {
         text: "LINUX",
-        icon:"/sidebarIcons/linux.png",
-        link:"/vue/"
+        icon:"c-linux",
+        prefix: "notes/",
+        link:"linux/"
     },
     {
         text: "HTML",
-        icon:"/sidebarIcons/html.png",
-        link:"/vue/"
+        icon:"c-html",
+        prefix: "notes/",
+        link:"html/"
     },
     {
         text: "CSS",
-        icon:"/sidebarIcons/css.png",
-        link:"/vue/"
+        icon:"c-css",
+        prefix: "notes/",
+        link:"css/"
     },
     {
         text: "SQL",
-        icon:"/sidebarIcons/sql.png",
-        link:"/vue/"
+        icon:"c-sql",
+        prefix: "notes/",
+        link:"sql/"
     },
     {
         text: "JAVASCRIPT",
-        icon:"/sidebarIcons/javascript.png",
-        link:"/vue/"
+        icon:"c-js",
+        prefix: "notes/",
+        link:"javascript/"
     },
 ]);

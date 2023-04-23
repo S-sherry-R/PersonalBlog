@@ -18,7 +18,7 @@
               <img
                 :src="item.ico"
                 :alt="item.name"
-                onerror='this.onerror=null,this.src=this.srcset="/assets/avatar.webp"'
+                onerror='this.onerror=null,this.src=this.srcset="/logo.png"'
               />
             </div>
             <div class="link-text">
@@ -32,7 +32,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import { api } from "../data/api";
 import { friends, LinkData } from "../data/friendData";
 const props = defineProps({
   type: String,
@@ -41,9 +40,6 @@ let linkDatas: LinkData[];
 switch (props.type) {
   case "friend":
     linkDatas = friends;
-    break;
-  case "api":
-    linkDatas = api;
     break;
   default:
     linkDatas = [];

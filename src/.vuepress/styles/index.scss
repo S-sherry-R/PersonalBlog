@@ -1,29 +1,25 @@
 // place your custom styles here
 @use "@sass-palette/hope-config";
-@font-face {
-  font-family: "Slidexiaxing";
-  src: url("/assets/font/Slidexiaxing-Regular.woff2") format("woff2"),
-    url("/assets/font/Slidexiaxing-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@import "fonts.scss";
+.home-style{
+  .site-name{
+    font-family: mainTitle,sans-serif;
+    font-size: 26px;
+    color: #ff554e
+  }
+  .blog-hero{
+    h1{
+      font-family: mainTitle,sans-serif;
+      color:#fff;
+      font-size: 56px;
+    }
+    p{
+      font-family: tagline,sans-serif;
+      color:#fff;
+      font-size: 42px;
+    }
+  }
 }
-@font-face {
-  font-family: "PRshouxie";
-  src: url("/assets/font/8d6a7466947745f9f211cd17e0ed5dc3.woff2")
-      format("woff2"),
-    url("/assets/font/8d6a7466947745f9f211cd17e0ed5dc3.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-.blog .fullscreen h1 {
-  font-size: 2.8rem;
-}
-// Powered by Waline v2.14.7
-// .wl-power {
-//   display: none;
-// }
 .blog-hero.fullscreen {
   z-index: 2;
 }
@@ -33,7 +29,7 @@
 
 [data-theme="light"] .theme-container .sidebar {
   @media (max-width: hope-config.$tablet) {
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: saturate(150%) blur(0.75rem);
   }
 }
@@ -46,7 +42,7 @@
 
 [data-theme="dark"] .theme-container .sidebar {
   @media (max-width: hope-config.$tablet) {
-    background-color: rgba(29, 32, 37, 0.8); 
+    background-color: rgba(29, 32, 37, 0.8);
     backdrop-filter: saturate(150%) blur(0.75rem);
   }
 }
