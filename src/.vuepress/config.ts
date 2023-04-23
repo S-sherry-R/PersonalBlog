@@ -2,17 +2,11 @@ import { getDirname, path } from "@vuepress/utils";
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { ohmylive2dPlugin } from "vuepress-plugin-oh-my-live2d";
-import {
-  canvasPlugin,
-  CanvasPluginType,
-} from "./plugins/vuepress-plugin-canvas";
 import { live2DAssistPlugin } from "./plugins/vuepress-plugin-live2DAssist";
-import { gradientCoverPlugin } from "./plugins/vuepress-plugin-gradient-cover";
 import theme from "./theme.js";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
 import { backPlugin } from "./plugins/vuepress-plugin-background";
 import { PopperShape } from "@moefy-canvas/theme-popper";
-import { hitokotoPlugin } from "./plugins/vuepress-plugin-hitokoto";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
@@ -47,8 +41,6 @@ export default defineUserConfig({
     shikiPlugin({
       theme: "one-dark-pro",
     }),
-    // 一言插件
-    hitokotoPlugin({}),
     // 鼠标特效插件
     popperPlugin({
       config: {
@@ -61,17 +53,6 @@ export default defineUserConfig({
     live2DAssistPlugin({
       subPageHidden: true,
     }),
-    // 背景插件
-    // canvasPlugin({
-    //   type: CanvasPluginType.Ribbon,
-    //   ribbonOption: {
-    //     zIndex: 1,
-    //     alpha: 0.8,
-    //     size: 90,
-    //   },
-    // }),
-    // 遮罩插件
-    // gradientCoverPlugin({}),
     backPlugin({}),
     // 谷歌统计
     googleAnalyticsPlugin({
@@ -81,9 +62,9 @@ export default defineUserConfig({
     }),
     // 搜索插件
     docsearchPlugin({
-      appId: "PI9QTF572N",
-      apiKey: "07e2432555d8ecdd3fb72978f0a05cdc",
-      indexName: "oragekk",
+      appId: "Hnuctb0n5inFmDhghCYxMwCv-MdYXbMMI",
+      apiKey: "3NBVVFsoQ1ur3ujjxLI5bKRV",
+      indexName: "sherrySR",
       locales: {
         "/": {
           placeholder: "搜索内容",
@@ -130,30 +111,22 @@ export default defineUserConfig({
     }),
     // 看板娘插件
     ohmylive2dPlugin({
-      // 在这里进行配置
-      source: "/assets",
-      models: [
-        {
-          scale: 0.3,
-          path: "/lafei_4/lafei_4.model3.json",
-        },
-        {
-          scale: 0.7,
-          path: "/z46_2/z46_2.model3.json",
-        },
-        {
-          scale: 0.3,
-          path: "/sipeibojue_5/sipeibojue_5.model3.json",
-        },
-      ],
-      tips: {
-        style: {
-          width: 150,
-          height: 100,
-          offsetX: 0,
-          offsetY: 90,
-        },
-      },
+      // 在这里进行配置，自定义模型配置
+      // source: "/assets",
+      // models: [
+      //   {
+      //     scale: 0.3,
+      //     path: "/lafei_4/lafei_4.model3.json",
+      //   },
+      //   {
+      //     scale: 0.7,
+      //     path: "/z46_2/z46_2.model3.json",
+      //   },
+      //   {
+      //     scale: 0.3,
+      //     path: "/sipeibojue_5/sipeibojue_5.model3.json",
+      //   },
+      // ],
     }),
   ],
   // 如果使用了pwa，则设置为false

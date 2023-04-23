@@ -3,23 +3,16 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/",
   {
-    text: "笔记",
-    icon: "note",
-    prefix: "/posts/",
-    children: [
-      { text: "iOS笔记", icon: "hk-apple", link: "iOS/" },
-      { text: "前端笔记", icon: "code", link: "Web/" },
-      { text: "Linux", icon: "linux", link: "Linux/" },
-      { text: "Python", icon: "python", link: "Python/" },
-      { text: "React", icon: "react", link: "cross-platform/ReactNative/" },
-      { text: "Flutter", icon: "hk-flutter", link: "cross-platform/Flutter/" },
-    ],
+    text: "博文",
+    icon: "article",
+    link: "/article",
   },
   {
-    text: "收藏",
-    icon: "hk-shoucang1",
-    link: "/mark",
+    text: "笔记",
+    icon: "note",
+    link: "/notes/vue",
   },
+
   {
     text: "留言板",
     icon: "mark",

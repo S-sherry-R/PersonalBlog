@@ -1,6 +1,7 @@
 import { App, PageOptions, PluginFunction } from "vuepress";
 import { getDirname, path } from '@vuepress/utils'
 
+// @ts-ignore
 const __dirname = getDirname(import.meta.url)
 export interface Live2DAssistOptions {
   subPageHidden: boolean;

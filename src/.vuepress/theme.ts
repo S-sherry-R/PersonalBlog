@@ -1,6 +1,6 @@
 import { localTheme } from "./theme/index";
 import { zhNavbar } from "./navbar/index.js";
-import { zhSidebar } from "./sidebar/index.js";
+import sidebar from "./sidebar/index";
 
 export default localTheme({
   hotReload: false,
@@ -47,7 +47,7 @@ export default localTheme({
       navbar: zhNavbar,
 
       // sidebar
-      sidebar: zhSidebar,
+      sidebar: sidebar,
 
       footer: "默认页脚",
 
