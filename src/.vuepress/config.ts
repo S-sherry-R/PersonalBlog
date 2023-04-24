@@ -5,7 +5,8 @@ import { ohmylive2dPlugin } from "vuepress-plugin-oh-my-live2d";
 import { live2DAssistPlugin } from "./plugins/vuepress-plugin-live2DAssist";
 import theme from "./theme.js";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
-import { backPlugin } from "./plugins/vuepress-plugin-background";
+// @ts-ignore
+import { backPlugin } from "vuepress-plugin-background";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
@@ -52,7 +53,7 @@ export default defineUserConfig({
     live2DAssistPlugin({
       subPageHidden: true,
     }),
-    backPlugin({}),
+    backPlugin(),
     // 谷歌统计
     googleAnalyticsPlugin({
       // 配置项
