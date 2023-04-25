@@ -7,6 +7,7 @@ category:
 tag:
   - 菜谱
 sticky: 1
+sidebar: false
 ---
 ::: info 全菜谱✨
 菜谱来自于B站up[日食记](https://space.bilibili.com/8960728?spm_id_from=333.337.0.0)，看看我能做会几道😄

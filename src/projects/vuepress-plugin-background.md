@@ -4,6 +4,7 @@ category:
   - 项目
 tag:
   - 插件
+sidebar: false
 ---
 # vuepress-plugin-background
 基于vuepress的背景插件
