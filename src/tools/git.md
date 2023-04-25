@@ -196,7 +196,7 @@ tag:
     
     `git reset [branch]` 切换分支，但这里的切换分支和上面的`git checkout [branch]`切换分支不同，下图说明：
 
-![git切换分支](/assets/gitBranch.png)
+![git切换分支](/assets/tools/gitBranch.png)
 
 ### 4.13、revert
 `git revert -n [commit-id]`
