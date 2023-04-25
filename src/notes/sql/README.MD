@@ -20,7 +20,7 @@ tag:
 
 编码修改成如下
 
-![sqlCsv](/backends/sqlCsv.png)
+![sqlCsv](/assets/notes/sqlCsv.png)
 
 ## 查询表的结构（列名等）
 

@@ -77,7 +77,7 @@ tag:
 ### 3.2、git文件的四种状态
 
 
-![git文件状态示意图](/tools/gitStatus.png)
+![git文件状态示意图](/assets/tools/gitStatus.png)
 
 <span style='color:var(--theme-color)'>**Untracked**</span>: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged。
 
@@ -88,7 +88,7 @@ tag:
 <span style='color:var(--theme-color)'>**Staged**</span>: 暂存状态. 执行git commit则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为Unmodify状态. 执行git reset HEAD filename取消暂存, 文件状态为Modified。
 ## 四、git常用命令
 
-![git常用命令](/tools/gitOrder.png)
+![git常用命令](/assets/tools/gitOrder.png)
 ### 4.1、init && clone
 `git init` 在当前目录新建一个仓库
 
@@ -196,7 +196,7 @@ tag:
     
     `git reset [branch]` 切换分支，但这里的切换分支和上面的`git checkout [branch]`切换分支不同，下图说明：
 
-![git切换分支](/tools/gitBranch.png)
+![git切换分支](/assets/gitBranch.png)
 
 ### 4.13、revert
 `git revert -n [commit-id]`
@@ -206,11 +206,11 @@ tag:
 
 <span style='color:var(--theme-color)'>**reset**</span> 切换版本是会删除丢弃最新的版本的，HEAD会直接跳到指定版本，但是还是可以通过reflog找回。
 
-![gitReset](/tools/gitReset.png)
+![gitReset](/assets/tools/gitReset.png)
 
 <span style='color:var(--theme-color)'>**revert**</span> 会将指定的bug版本视为bug版，会将当前版本中的bug版的代码删除，生成新的commit覆盖掉当前commit，但是commit-id是不会变的。
 
-![gitRevert](/tools/gitRevert.png)
+![gitRevert](/assets/tools/gitRevert.png)
 :::
 ### 4.14、branch
 `git branch [branch-name]` 创建分支
