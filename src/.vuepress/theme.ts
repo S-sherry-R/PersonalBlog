@@ -88,12 +88,7 @@ export default localTheme({
       emoji:[
         "https://unpkg.com/@waline/emojis@1.1.0/tieba",
         "https://unpkg.com/@waline/emojis@1.1.0/weibo",
-        "https://emoji.shojo.cn/bili/src/tv_小电视_动图",
-        "https://emoji.shojo.cn/bili/src/罗小黑战记",
-        "https://emoji.shojo.cn/bili/src/剑网3·侠肝义胆沈剑心",
-        "https://emoji.shojo.cn/bili/src/装扮小姐姐梦幻冬季",
-        "https://emoji.shojo.cn/bili/src/装扮小姐姐·秋日午后",
-        "https://emoji.shojo.cn/bili/src/天涯明月刀真武",
+        "https://unpkg.com/@waline/emojis@1.1.0/bilibili",
       ],
       locales:{
         "/":{

@@ -33,8 +33,20 @@ export const zhNavbar = navbar([
     link: "/friend",
   },
   {
+    text: "我的项目",
+    icon: "project",
+    prefix: "/projects/",
+    children: [
+      {text: "vuepress-plugin-background", icon: "background", link: "vuepress-plugin-background",},
+    ],
+  },
+  {
     text: "关于",
     icon: "about",
-    link: "/about",
+    prefix: "/about/",
+    children: [
+      {text: "关于本站", icon: "site", link: "aboutSite",},
+      {text: "关于我", icon: "me", link: "aboutMe",},
+    ],
   },
 ]);

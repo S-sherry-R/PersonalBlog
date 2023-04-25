@@ -25,5 +25,10 @@ projects:
     desc: 欢迎留言☺
     link: /messageBoard
 
+  - icon: /logo.svg
+    name: vuepress-plugin-background
+    desc: 背景插件
+    link: /projects/vuepress-plugin-background
+
 footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>
 ---

@@ -110,24 +110,7 @@ export default defineUserConfig({
       },
     }),
     // 看板娘插件
-    ohmylive2dPlugin({
-      // 在这里进行配置，自定义模型配置
-      // source: "/assets",
-      // models: [
-      //   {
-      //     scale: 0.3,
-      //     path: "/lafei_4/lafei_4.model3.json",
-      //   },
-      //   {
-      //     scale: 0.7,
-      //     path: "/z46_2/z46_2.model3.json",
-      //   },
-      //   {
-      //     scale: 0.3,
-      //     path: "/sipeibojue_5/sipeibojue_5.model3.json",
-      //   },
-      // ],
-    }),
+    ohmylive2dPlugin({}),
   ],
   // 如果使用了pwa，则设置为false
   shouldPrefetch: false,

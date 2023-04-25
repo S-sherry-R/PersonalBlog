@@ -26,7 +26,11 @@
 .blog-page-wrapper {
   z-index: 2;
 }
-
+.navbar  .site-name{
+  font-family: mainTitle,sans-serif;
+  font-size: 26px;
+  color: #ff554e
+}
 [data-theme="light"] .theme-container .sidebar {
   @media (max-width: hope-config.$tablet) {
     background-color: rgba(255, 255, 255, 0.6);
