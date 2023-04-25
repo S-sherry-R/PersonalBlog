@@ -6,7 +6,6 @@ category:
   - 工具
 tag:
   - git
-sticky: 1
 ---
 ## 一、基本的linux命令
 

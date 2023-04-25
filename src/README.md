@@ -30,5 +30,10 @@ projects:
     desc: 背景插件
     link: /projects/vuepress-plugin-background
 
+  - icon: /assets/rsj.jpg
+    name: 老刀的菜谱
+    desc: b站up主日食记的菜谱
+    link: /cook
+
 footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>
 ---

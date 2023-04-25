@@ -47,3 +47,45 @@ var app= Vue.extend({
   // 创建 app实例，并挂载到一个元素上。  
   new app().$mount('#app')  
 ```
+## vue3注册全局方法
+```ts
+import util from "@/js/util";  
+  
+const app = createApp(App)  
+  
+app.config.globalProperties.$util = util  
+app.mount('#app')
+```
+组件中使用
+```ts
+import {onMounted,getCurrentInstance} from "vue";  
+const {proxy} = getCurrentInstance()  
+  proxy.$util.getFile("button/btnInstance1.txt",(res)=>{  
+    console.log(res)  
+  })
+```
+还不如直接引入来的方便
+```ts
+import util from "@/js/util";   
+  util.getFile("button/btnInstance1.txt",(res)=>{  
+    console.log(res)  
+  })  
+```
+## dependencies和devDependencies的区别
+**dependencies**和**devDependencies**的区别在于前者用于生产环境，后者用于开发环境
+
+npm install xxx -g 表示全局安装，通常用于安装脚手架等工具
+
+npm install xxx –save(-S) 表示本地安装，会被加至dependencies部分
+
+npm install xxx –save-dev(-D) 表示本地安装，会被加至devDependencies部分
+
+npm install会默认下载dependencies和devDependencies中的所有依赖包
+
+> 1.如webpack、html-webpack-plugin等工具包就安装在devDependencies开发环境下，
+>
+> 2.  项目部署到开发环境所必须的依赖包则安装在dependencies生产环境下。
+
+在项目编译时dependencies、devDependencies里的依赖其实没有影响，最重要的区别体现在:
+
+> npm包发布的时候，其他的开发者可以从你发布的npm包中下载dependencies里的依赖包，而不能下载devDependencies里的内容。

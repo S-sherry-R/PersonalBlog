@@ -37,6 +37,7 @@ export default localTheme({
       BiliBili: "https://space.bilibili.com/3493088093801092?spm_id_from=333.999.0.0",
     },
     name: "孤独的暖阳",
+    articlePerPage: 5
   },
   locales: {
     /**
