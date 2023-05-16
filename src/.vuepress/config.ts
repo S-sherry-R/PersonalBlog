@@ -62,8 +62,8 @@ export default defineUserConfig({
     }),
     // 搜索插件
     docsearchPlugin({
-      appId: "Hnuctb0n5inFmDhghCYxMwCv-MdYXbMMI",
-      apiKey: "3NBVVFsoQ1ur3ujjxLI5bKRV",
+      appId: "25GFQHJ3GQ",
+      apiKey: "c825d29420633e105fe480746cee7512",
       indexName: "sherrySR",
       locales: {
         "/": {
